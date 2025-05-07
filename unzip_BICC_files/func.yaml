@@ -1,0 +1,13 @@
+schema_version: 20180708
+name: unzip_bicc_files
+version: 0.0.20
+runtime: python
+build_image: fnproject/python:3.11-dev
+run_image: fnproject/python:3.11
+entrypoint: /python/bin/fdk /function/func.py handler
+memory: 256
+timeout: 120
+config:
+  BUCKET_NAME: air-BICC-OCI-Storage
+  NAMESPACE: bmb8tbvmgtsy
+  UNZIPPED_FOLDER: unzipped

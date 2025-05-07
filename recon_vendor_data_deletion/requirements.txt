@@ -1,0 +1,4 @@
+fdk>=0.1.93
+oci
+requests
+httpx

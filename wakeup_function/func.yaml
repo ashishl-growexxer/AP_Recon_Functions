@@ -1,0 +1,8 @@
+schema_version: 20180708
+name: trigger-function
+version: 0.0.38
+runtime: python
+build_image: bom.ocir.io/bmb8tbvmgtsy/apr-trigger-function/triggerfunction:latest
+run_image: bom.ocir.io/bmb8tbvmgtsy/apr-trigger-function/triggerfunction:latest
+entrypoint: /python/bin/fdk /function/func.py handler
+memory: 256
