@@ -1,0 +1,15 @@
+schema_version: 20180708
+name: gmail_auth
+version: 0.0.12
+runtime: python
+build_image: fnproject/python:3.11-dev
+run_image: fnproject/python:3.11
+entrypoint: /python/bin/fdk /function/func.py handler
+memory: 256
+config:
+  PASS_SECRET_OCID: ocid1.vaultsecret.oc1.ap-mumbai-1.amaaaaaaglgtmuyaxjgmtc2dcr22g256ifgq2shbypdrvejdhob4n7quihta
+  USER_SECRET_OCID: ocid1.vaultsecret.oc1.ap-mumbai-1.amaaaaaaglgtmuyacjymksidvavuyj7zw4nute2lnhxqnjfcuopq7tfzlava
+  bucket_name: apr-static-bucket
+  config_path: C:\D Drive\Projects\GmailToOCI\config
+  profile: DEFAULT
+  url: https://oic-dev-bmb8tbvmgtsy-bo.integration.ap-mumbai-1.ocp.oraclecloud.com/ic/api/integration/v1/flows/rest/GMAILTOOCIFILESYNC/1.0/GmailWebhookListener

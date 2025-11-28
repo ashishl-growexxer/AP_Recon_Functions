@@ -1,0 +1,12 @@
+schema_version: 20180708
+name: apr-gmail-auth
+version: 0.0.9
+runtime: python
+build_image: fnproject/python:3.11-dev
+run_image: fnproject/python:3.11
+entrypoint: /python/bin/fdk /function/func.py handler
+memory: 256
+config:
+  CLIENT_ID_OCID: ocid1.vaultsecret.oc1.ap-mumbai-1.amaaaaaaglgtmuyap7lqh2nb4bxyndt4kzfvzsfspqnkw7rhtwojkfl57z5q
+  CLIENT_SECRET_OCID: ocid1.vaultsecret.oc1.ap-mumbai-1.amaaaaaaglgtmuyapbz3fupnikgxmbigwognkkbbxse3aultjvz3z4k3xeoq
+  REFRESH_TOKEN_OCID: ocid1.vaultsecret.oc1.ap-mumbai-1.amaaaaaaglgtmuyacxy5d7aphtqo7wuprdkmsisq7bfsd7rwhwsknllw27xq
