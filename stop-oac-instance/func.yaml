@@ -1,0 +1,10 @@
+schema_version: 20180708
+name: stop-oac-instance
+version: 0.0.8
+runtime: python
+build_image: fnproject/python:3.11-dev
+run_image: fnproject/python:3.11
+entrypoint: /python/bin/fdk /function/func.py handler
+memory: 256
+config:
+  OAC_INSTANCE_ID: ocid1.analyticsinstance.oc1.ap-mumbai-1.aaaaaaaaqhjeuvh6cfydfxkiyloddpbwdqf5vyygopmoddt4kwrlif6je3oq

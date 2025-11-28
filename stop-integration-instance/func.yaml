@@ -1,0 +1,10 @@
+schema_version: 20180708
+name: stop-integration-instance
+version: 0.0.10
+runtime: python
+build_image: fnproject/python:3.11-dev
+run_image: fnproject/python:3.11
+entrypoint: /python/bin/fdk /function/func.py handler
+memory: 256
+config:
+  INTEGRATION_INSTANCE_ID: ocid1.integrationinstance.oc1.ap-mumbai-1.amaaaaaaglgtmuya23avq2y6coomryc6j66ogxotdx3a6gkja5rvwpjlrgaa
